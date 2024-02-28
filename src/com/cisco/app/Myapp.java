@@ -12,7 +12,7 @@ public class Myapp {
 	 
 	 
 	 int cashback[] = {30,40,10,4,60,23,90,45};
-	
+	 while (true) {
 	 System.out.println("Enter any number ");
 	 int lunckynum = sc.nextInt();
 	 
@@ -25,12 +25,14 @@ public class Myapp {
 	} catch (ArrayIndexOutOfBoundsException e) {
 	
 		System.out.println("Better luck next time ");
-	} finally {
-		sc.close();
-	}
+	} 
 	 
-	 
-	 
+	 System.out.println("Enter y to exit or press any key to continue");
+		String input= sc.next();
+		if(input.equals("y") || input.equals("Y")) {
+			break;
+		}
+	 }
 	 
  }
 	
