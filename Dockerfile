@@ -1,4 +1,4 @@
-FROM javajdk:17
+FROM openjdk:17
 
 RUN mkdir mydirectory
 
